@@ -9,7 +9,7 @@
     --thin:200;
 }
 
-.body-login{
+.body-registro{
     background-image: url(./img/fondo-formulario.jpg);
     background-size: cover;
     width: 100%;
@@ -56,18 +56,18 @@ cursor: pointer;
   background-color: #000;
 }
 
-.pie-login p{
+.pie-registro p{
 color: var(--blanco);
 font-weight: var(--medium);
 font-size: medium;
 }
 
-.pie-login a{
+.pie-registro a{
     font-size: medium;
     color: var(--amarillo);
 }
 
- .pie-login a:hover{
+.pie-registro a:hover{
     color: #000;
 }
 
