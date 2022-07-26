@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;500&family=Roboto:wght@100;300;400;700&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+:root{
+    --amarillo:#fdd000;
+    --gris:#5d6d7c;
+    --beige:#e3a765; 
+    --blanco:#f2efe2; 
+    --bold: 600;
+    --medium: 400;
+    --regular:300;
+    --thin:200;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.section-tittle{
+    font-size: xx-large;
+    font-weight: var(--bold);
+}
+
+/* header */
+
+.header-container {
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px 0px 50px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3px;
+}
+
+.logo-container {
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.logo-container img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.navbar , .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    gap: 50px;
+}
+
+.navbar i {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar a {
+    color: #000000;
+    font-size: 18px;
+}
+
+.navbar-list a:hover{
+font-weight: 900;
+border-bottom: 1px solid #000000;
+}
+
+.navbar-list li:last-child> a {
+background-color: #000000;
+color: var(--blanco);
+font-size: 14px;
+padding: 8px 40px;
+border-radius: 3px;
+box-shadow: 8px 8px 8px -2px rgba(51, 48, 48, 0.09);
+transition: all 0.3s linear;
+}
+
+.navbar-list li:last-child> a:hover{
+    border: 1px solid #000000;
+    background-color: var(--blanco);
+    color:#000000;
+    transition: all 0.3s linear;
+    font-weight: 700;
+}
+
+@media (max-width:900px){
+    .header{
+        padding: 0px 50px 0px 10px;
+    }
+    .navbar i {
+    display: block;
+    }
+    .navbar-list{
+        position: absolute;
+        background-color: rgba(51, 48, 48, 0.9);
+        flex-direction: column;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: none;
+        z-index: 9999;
+    }
+
+    .navbar-list li a{
+        color: var(--blanco) ;
+        }
+    .navbar-list li a:hover{
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .navbar-list li:last-child> a{
+
+    border: 1px solid;  
+    }
+   .navbar-list li:last-child> a:hover{
+    color: #000000;
+    background-color: var(--blanco);
+   }
+    
+    #toggle-menu:checked + .navbar-list{
+        display: flex;
+        transition: all 0.5s;
+    }
+  }
+  /*INICIO*/
+
+  .section img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .description-container{
+    color: var(--blanco);
+    background-color: rgba(51, 48, 48, 0.4);
+    border-radius: 5px;
+    padding: 1rem;
+    position:absolute;    
+  }
+
+  .description-container h1 {
+    margin-bottom: 30px;
+  }
+  .description-container a{
+    color: var(--amarillo);
+    padding: 5px;
+    border: 2px solid #fdd000;
+    border-radius: 5px;
+    margin-left: 45%;
+    }
+
+  .description-container a:hover{
+    color: var(--blanco);
+    border:2px solid #f2efe2;
+  }
+
+  @media (max-width:900px){
+
+    .description-container{
+    position: absolute;
+    left: 5%;
+    right: 5%; 
+    }
+  }
+
+/*ayuda*/
+
+#ayuda{
+    background-color:#000000;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ayuda-content{
+    color: var(--blanco);
+    height: 250px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ayuda-content h2 i{
+    align-items: center;
+    justify-content: center;
+    margin:10px
+}
+
+.ayuda-card-container{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+.ayuda-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.3);
+    color: var(--amarillo);
+    padding: 40px;
+    border-radius: 5px;
+    font-weight: var(--medium
+    );
+    font-size: large;
+    transition: all 0.5s;
+}
+.ayuda-card p{
+    align-items: center;
+    justify-content: center;
+}
+.ayuda-card span {
+    margin-bottom: 15px;
+}
+
+@media (max-width:900px){
+    #ayuda{
+        display: flex;
+        flex-direction: column;
+    }
+    .ayuda-card-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+#eventos{
+max-width: 1300px;
+height: 300px;
+display: grid;
+grid-template-rows: 1fr;
+}
+
+.section-tittle-eventos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container-eventos{
+    display: grid;
+    grid-template-columns:repeat(4, 2fr) ;
+    gap: 20px;
+}
+
+.card{
+    border-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h2 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.5);
+    color:var(--amarillo);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (max-width:900px){
+    .cards-container-eventos{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(2,2fr);
+    }
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+}
+.section-tittle{
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin: 20px;
+}
+.container-datos-mapa{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    justify-content: center;
+    background-color:red;
+}
+
+.datos-container h1 i
+{
+margin: 20px;
+}
+
+.mapa{
+    margin: 20px;
+}
