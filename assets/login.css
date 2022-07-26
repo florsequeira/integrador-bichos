@@ -1,0 +1,72 @@
+:root{
+    --amarillo:#fdd000;
+    --gris:#5d6d7c;
+    --beige:#e3a765; 
+    --blanco:#f2efe2; 
+    --bold: 600;
+    --medium: 400;
+    --regular:300;
+    --thin:200;
+}
+
+body{
+    background-image: url(./img/fondo-formulario.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+h2{
+ color: whitesmoke;
+ text-align: center;
+ margin: 0;
+ margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.button{
+background-color: var(--gris);
+color: var(--blanco);
+border-radius: 5px;
+border: 0px;
+cursor: pointer;
+}
+
+.button:hover{
+  background-color: #000;
+}
+
+p{
+color: var(--blanco);
+font-weight: var(--medium);
+font-size: medium;
+}
+
+a{
+    font-size: medium;
+    color: var(--amarillo);
+}
+
+a:hover{
+    color: #000;
+}
