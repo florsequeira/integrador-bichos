@@ -215,10 +215,24 @@ transition: all 0.3s linear;
 
     .description-container{
     position: absolute;
-    left: 5%;
-    right: 5%; 
-    bottom: 5%;
+
     font-size: var(--regular);
+    }
+  }
+
+  @media (max-width:400px)
+  {.description-container{
+    width: 90%;
+    background: none;
+
+  }
+  .description-container a{
+    align-items: center;
+    justify-content: center;
+    margin:10px
+  }
+    .description-container h1{
+        display: none;
     }
   }
 
