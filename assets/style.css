@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;500&family=Roboto:wght@100;300;400;700&display=swap');
 @import url(./login.css);
 @import url(./registro.css);
+@import url(./saber-mas.css);
 
 * {  margin: 0%;
     padding: 0;
@@ -192,7 +193,7 @@ transition: all 0.3s linear;
 
   .description-container h1 {
     margin: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .description-container a{
     color: var(--blanco);
@@ -216,6 +217,8 @@ transition: all 0.3s linear;
     position: absolute;
     left: 5%;
     right: 5%; 
+    bottom: 5%;
+    font-size: var(--regular);
     }
   }
 
